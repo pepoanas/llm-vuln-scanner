@@ -2,6 +2,9 @@
 
 A comprehensive security assessment framework for testing local Large Language Models (LLMs) against 16 categories of adversarial attack vectors, including prompt injections, jailbreaks, training data leakage, and more.
 
+> **Status:** Alpha — under active development. Core functionality is stable, but interfaces and outputs may change. Contributions and feedback welcome.
+
+
 ## Features
 
 - Tests 16 known classes of LLM vulnerabilities
@@ -62,6 +65,12 @@ Prompt and response previews
 
 Timestamp
 
+## Modular Design
+
+The scanner is architected for modularity. Each attack category is implemented as an isolated method, and new categories can be added with minimal effort by extending the class and updating the report aggregation logic. Analysis functions are similarly decoupled.
+
+This design encourages community contribution of new adversarial techniques as the LLM threat landscape evolves.
+
 ## Requirements
 
 Python 3.8 or higher
@@ -112,6 +121,9 @@ Add a --remote flag that disables certain attack categories for compliance.
 
  Replay mode
 Allow previously failed prompts to be re-tested in a standalone mode.
+
+ Selective test execution from CLI  
+Run a subset of attack categories (e.g., `--category prompt_injection,jailbreak`) via CLI flags.
 
 ## License
 
