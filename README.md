@@ -1,8 +1,38 @@
+<!--
+LLM Vulnerability Scanner: Local LLM adversarial testing toolkit for prompt injection,
+jailbreak attempts, training data extraction, model inversion detection, context leakage,
+structured function-call abuse, multimodal poisoning, Unicode obfuscation attacks,
+data confidentiality violations, and safety alignment testing.
+
+Core Search Keywords:
+local LLM pentesting, adversarial prompt generator, GENAI security scanner,
+ChatGPT jailbreak detection, prompt injection framework, LLM privacy audit tool,
+model memorization testing, AI red team framework, Ollama security scanner,
+LM Studio testing toolkit, zero-width encoding attacks, guardrail bypass testing,
+LLM hardening research platform, confidential data detection in AI chat models
+
+Target Users:
+AI security researchers, red team operators, vulnerability analysts,
+prompt engineers, compliance auditors (GDPR/HIPAA), CTF competitors
+
+Purpose:
+Improving local LLM robustness against real-world adversarial threats
+through structured, repeatable, evidence-based testing.
+-->
+
+
 # LLM Vulnerability Scanner
+![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
+![Focus: LLM Security](https://img.shields.io/badge/focus-LLM%20Security-blue)
+![Scan: 25+ Vulnerability Types](https://img.shields.io/badge/tests-25%2B%20attack%20categories-purple)
+![Target: Local LLM APIs](https://img.shields.io/badge/target-Local%20LLM%20APIs-darkgreen)
+![Reports: HTML/JSON](https://img.shields.io/badge/reports-HTML%20%7C%20JSON-yellow)
+![MIT License](https://img.shields.io/badge/license-MIT-blue)
+
 
 A comprehensive security assessment framework for testing local Large Language Models (LLMs) against over 25 categories of adversarial attack vectors, including prompt injection, jailbreaks, data leakage, model inversion, encoding attacks, and more.
 
-> **Status:** Alpha — under active development. Core functionality is stable, but interfaces and outputs may change. Contributions and feedback welcome.
+> **Status:** Alpha — under active development. Core functionality is stable, but interfaces and outputs may change. 
 
 
 ## Features
@@ -47,6 +77,21 @@ A comprehensive security assessment framework for testing local Large Language M
 | 22 | Hallucination              | Making up incorrect or future “facts”                                   |
 | 23 | Disinformation             | Generating falsehoods without correcting them                           |
 | 24 | PII Disclosure             | Revealing real or synthetic personal identifiable information           |
+
+### OWASP LLM Top 10 / AI Threat Mapping
+
+| Threat | Category | Coverage in Scanner | ID |
+|-------|----------|-------------------|----|
+| Prompt Injection | Input Manipulation | ✓ Full coverage | LLM01 |
+| Data Leakage | Sensitive Data Exposure | ✓ Training data extraction | LLM02 |
+| Model Hallucination | Output Integrity Failure | ✓ Hallucination tests | LLM03 |
+| Unauthorized Code Execution | Unsafe Function Calling | ✓ Function abuse tests | LLM04 |
+| Supply Chain Poisoning | Context Manipulation | ✓ Poisoning-based attacks | LLM05 |
+| Inference Abuse | Membership/Model Inversion | ✓ Model inversion tests | LLM06 |
+| Policy Evasion | Jailbreak / Safety Bypass | ✓ Jailbreak categories | LLM07 |
+| Disinformation & Toxicity | Alignment Deviation | ✓ Toxicity, disinformation | LLM08 |
+| Identity Impersonation | User Simulation Attacks | ✓ Roleplay escape | LLM09 |
+| Overreliance | Safety Weakness Exploitation | ✓ Repetition consistency scans | LLM10 |
 
 
 --------------------
@@ -176,3 +221,24 @@ Disclaimer
 --------------------------------
 This tool is designed exclusively for **ethical research and local model testing**. Do not use this against commercial APIs or externally hosted LLMs without explicit permission.  
 Violating Terms of Service or testing boundaries on third-party systems may carry legal risk or ethical concerns.
+
+
+<!--
+SEO Footer — LLM Vulnerability Scanner
+
+Keywords:
+LLM security scanning, AI model jailbreak defense, ChatGPT jailbreak tester,
+prompt injection audit tool, adversarial model testing, data leakage scoring,
+model inversion security tool, membership inference detection,
+context poisoning prevention, Unicode token attack testing, encoding attack suite,
+structured prompt fuzzing, ethical AI pentest tooling, AI safety compliance scanner
+
+Notes:
+This tool is intended for defensive validation and robustness improvement of
+privately hosted LLMs. Unauthorized testing of remote or commercial models
+may violate legal and ethical boundaries.
+
+Audience:
+AI security engineers, penetration testers, model alignment researchers,
+regulators, and internal security compliance teams.
+-->
